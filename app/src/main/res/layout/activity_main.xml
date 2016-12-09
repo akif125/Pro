@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.akif_.pro.MainActivity"
+    android:background="@color/button_material_dark">
+
+
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:hint="EMAIL"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/edit"
+        android:minHeight="40dp"
+        android:layout_above="@+id/etPass"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/etPass"
+        android:hint="PASSWORD"
+        android:background="@drawable/edit"
+        android:minHeight="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:id="@+id/btnLogin"
+        android:onClick="onLogin"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/etPass"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dont Have Account? "
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/btnLogin"
+        android:layout_marginBottom="135dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fastpool"
+        android:id="@+id/textView2"
+        android:layout_marginTop="27dp"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView"
+        android:background="@color/button_material_dark"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:onClick="onSignup"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:text="Signup" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etcat"
+        android:layout_above="@+id/etName"
+        android:layout_toStartOf="@+id/btnLogin"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/edit"
+        android:minHeight="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:hint="CATEGORY"/>
+
+
+</RelativeLayout>
